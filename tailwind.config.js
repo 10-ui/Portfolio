@@ -6,6 +6,13 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      "gnav":"Bree Serif"
+    },
+    backgroundColor: {
+      "body":"#C49851",
+      "header":"#F1EFDD"
+    }
   },
   plugins: [],
 }
