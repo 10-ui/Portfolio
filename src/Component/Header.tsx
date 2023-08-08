@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import icon from "../assets/kuma.png"
 
 export const Header:React.FC = ()=> {
 
@@ -9,7 +9,7 @@ export const Header:React.FC = ()=> {
       <header id="header" className="fixed left-0 top-0 grid w-1/5 h-screen place-items-center mr-auto bg-header">
         <nav className="mx-auto list-none my-5">
           <div className="w-36">
-            <img src="/assets/kuma.png" alt="かわいい熊" />
+            <img src={ icon } alt="かわいい熊" />
           </div>
           <ul className="text-center my-20 font-gnav">
             <li className="my-5 text-3xl"><Link to="/">Top</Link></li>
