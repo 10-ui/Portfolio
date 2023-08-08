@@ -1,8 +1,8 @@
-function top() { 
-  history.pushState({}, '', '#Top');
-}
+import React from "react";
+import { Link } from "react-router-dom";
 
-function Header() {
+
+export const Header:React.FC = ()=> {
 
   return (
     <>
@@ -12,8 +12,8 @@ function Header() {
             <img src="/src/assets/kuma.png" alt="かわいい熊" />
           </div>
           <ul className="text-center my-20 font-gnav">
-            <li className="my-5 text-3xl"><a href="#Top" onClick={top}>Top</a></li>
-            <li className="my-5 text-3xl"><a href="#">Works</a></li>
+            <li className="my-5 text-3xl"><Link to="/">Top</Link></li>
+            <li className="my-5 text-3xl"><Link to="/Works">Works</Link></li>
             <li className="my-5 text-3xl"><a href="#">About</a></li>
             <li className="my-5 text-3xl"><a href="#">Contact</a></li>
           </ul>
@@ -22,5 +22,3 @@ function Header() {
     </>
   )
 }
-
-export default Header
