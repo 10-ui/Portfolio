@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {},
     fontFamily: {
-      "gnav":"Bree Serif"
+      "gnav":"Bree Serif",
+      "section":"Klee One"
     },
     backgroundColor: {
       "body":"#C49851",
